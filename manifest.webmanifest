@@ -3,7 +3,7 @@
   "short_name": "NextPlan",
   "description": "纯本地的课程与计划管理工具",
   "lang": "zh-CN",
-  "start_url": "./?ui=3",
+  "start_url": "./?ui=3.1",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",

@@ -1,6 +1,6 @@
 
-const CACHE = "nextplan-public-index-D7mYWtN3.css-index-azlb2MAs.js";
-const CORE = ["./","./index.html","./manifest.webmanifest","./favicon.svg","./apple-touch-icon.png","./icon-192.png","./icon-512.png","./assets/index-D7mYWtN3.css","./assets/index-azlb2MAs.js"];
+const CACHE = "nextplan-public-index-IjMyZ25b.js-index-byEXYh2Q.css";
+const CORE = ["./","./index.html","./manifest.webmanifest","./favicon.svg","./apple-touch-icon.png","./icon-192.png","./icon-512.png","./assets/index-IjMyZ25b.js","./assets/index-byEXYh2Q.css"];
 const root = self.registration.scope;
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE.map(x => new URL(x, root).href))).then(() => self.skipWaiting())));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("nextplan-public-") && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
